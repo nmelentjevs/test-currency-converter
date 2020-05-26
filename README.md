@@ -1,4 +1,4 @@
-###To start the app run 
+### To start the app run 
 ```
 npm start
 ```
