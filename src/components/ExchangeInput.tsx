@@ -62,10 +62,12 @@ const ExchangeInput: FC<ExchangeInputProps> = ({
         value ? setToCurrency(value.currencyCode) : setToCurrency('EUR')
       }
       defaultValue={{
-        currencyCode: 'EUR',
+        currencyCode: toCurrency || 'EUR',
         name: 'Spain',
       }}
-      getOptionSelected={(option) => option.currencyCode === 'EUR'}
+      getOptionSelected={(option) =>
+        option.currencyCode === (toCurrency || 'EUR')
+      }
       getOptionLabel={(option) => option.currencyCode}
       renderOption={(option) => (
         <React.Fragment>
